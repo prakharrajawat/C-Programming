@@ -3,7 +3,7 @@
 void main()
 {
 
-  int i;
+  int printf;
   int Num[10];
   for (i = 0; i <= 9; i++)
 

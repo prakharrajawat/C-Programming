@@ -23,7 +23,6 @@ int main()
   {
     printf("pass");
   }
-
   else
   {
     printf("fail");

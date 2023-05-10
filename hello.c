@@ -1,6 +1,15 @@
-#include<stidio.h>
+#include <stdio.h>
 
-void main () 
+int main()
 {
-	printf("hello");
+	int i = 0;
+	do
+	{
+		// statements
+	} while (condition);
+	while (i <= n)
+	{
+		// statements
+		// updation
+	}
 }

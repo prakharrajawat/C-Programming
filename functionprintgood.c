@@ -7,7 +7,6 @@ void goodnight();
 
 void main()
 {
-
   goodmorning();
   goodafternoon();
   goodnight();

@@ -1,17 +1,39 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
+  int arr[40];
+  int i, n, Num, count = 0;
 
-  int i, count = 0;
+  printf("enter no. of elements: ");
+  scanf("%d", &n);
 
-  char Gen[] = {'m', 'f', 'm', 'f', 'f'};
-  for (i = 0; i <= 4; i++)
+  printf("enter the no. to check whether(present 3 times or no) : ");
+  scanf("%d", &Num);
+
+  for (i = 1; i <= n; i++)
   {
-    if (Gen[i] == 'm' || Gen[i] == 'f')
+    printf("Enter elements : ");
+    scanf("%d", &arr[i]);
+  }
+
+  for (i = 1; i <= n; i++)
+  {
+
+    if (arr[i] == Num)
     {
       count = count + 1;
     }
   }
-  printf(" total:%d", count);
+
+  if (count == 3)
+  {
+    printf("Number is Present 3 times !");
+  }
+  else
+  {
+    printf("Number is not Present!");
+  }
+
+  return 0;
 }

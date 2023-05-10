@@ -1,25 +1,48 @@
-// WAP a program to reverse inputted char.
+// WAP a program to reverse inputted array.
 
 #include <stdio.h>
 
 int main()
 {
-  char arr[100];
-  int i;
+  int arr[100];
+  int i, n;
+  printf("enter no. of elements: ");
+  scanf("%d", &n);
 
   printf("Enter elements in array: ");
-  for (i = 0; i <= 9; i++)
+  for (i = 1; i <= n; i++)
   {
-
-    fflush(stdin);
-    scanf("%c", &arr[i]);
+    scanf("%d", &arr[i]);
   }
 
   printf("\nArray in reverse order: ");
-  for (i = 9; i >= 0; i--)
+  for (i = n; i >= 1; i--)
   {
-    printf("%c\t", arr[i]);
+    printf("%d\t", arr[i]);
   }
+  printf("%d", arr[2]);
 
   return 0;
 }
+
+/*
+
+#include <stdio.h>
+void main()
+{
+  char str[100];
+  int i, n;
+  printf("size of a word : ");
+  scanf("%d", &n);
+  printf("enter the word according to your entered size =");
+  for (i = 0; i <= n; i++)
+  {
+    scanf("%c", &str[i]);
+  }
+  printf("\nArray in reverse order: ");
+  for (i = n; i >= 0; i--)
+  {
+    printf("%c\n", str[i]);
+  }
+}
+*/
