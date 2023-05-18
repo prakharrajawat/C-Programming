@@ -70,9 +70,9 @@ int Enque(int value)
     for (int i = q.front; i <= q.rear; i++)
     {
       q.queue[i - q.front] = q.queue[i];
-      q.rear = (q.rear - q.front) + 1;
-      q.front = 0;
     }
+    q.rear = (q.rear - q.front) + 1;
+    q.front = 0;
   }
   else if (q.front == -1)
   {
